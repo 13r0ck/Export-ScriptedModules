@@ -5,10 +5,12 @@ PowerShell Modules can either be "Scripted" (Programmed in Powershell) or "Binar
 
 This can be used for applications that allow for remote scripts to be run, but do not work locally and cannot see modules. Or as a way to send a module to another person to use without needing to install the module themselves.
 
+Using command aliases also works. Typing `Export-ScriptedModules O365` is equivalent to `Export-ScriptedModules Connect-O365`
+
 ## Export to clipboard
-Export-ScriptedModules [Get-DisplayConnectors](https://github.com/13r0ck/Get-DisplayConnectors)
+`Export-ScriptedModules Get-DisplayConnectors`
 
 ## Export to ps1
-Export-ScriptedModules [Get-DisplayConnectors](https://github.com/13r0ck/Get-DisplayConnectors) -path C:\<example path>
+`Export-ScriptedModules Get-DisplayConnectors-path C:\<example path>`
 
 This module is not yet signed and uploaded to Powershell Gallery for easy install. Just Place the folder from this repository in a powershell modules folder on your Desktop
